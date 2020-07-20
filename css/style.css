@@ -3157,11 +3157,11 @@ article .readmore >a {
   padding: 16px;
 }
 .cover-wrapper .cover .cover-body div.b {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
+  margin-top: 4vh;
+  margin-bottom: 20vh;
 }
 .cover-wrapper .cover.half {
-  margin-bottom: -100px;
+  margin-bottom: -125px;
   max-height: 640px;
   min-height: 400px;
   height: calc(36vh - 60px + 200px);
@@ -3179,13 +3179,13 @@ article .readmore >a {
   width: 100%;
   height: 64px;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   text-align: center;
   cursor: pointer;
 }
 .cover-wrapper .cover .scroll-down .scroll-down-effects {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 64px;
   position: absolute;
   width: 24px;
@@ -4161,7 +4161,7 @@ div.hoverbox:hover >div.target {
   position: absolute;
   width: 32px;
   left: 5px;
-  color: rgba(85,85,85,0.7);
+  color: rgba(255,126,42,0.6);
 }
 @media screen and (max-width: 500px) {
   .l_header .m_search .icon {
@@ -4174,7 +4174,7 @@ div.hoverbox:hover >div.target {
   padding-bottom: 8px;
   line-height: 1.3;
   width: 100%;
-  color: #555;
+  color: rgba(255,126,42,0.8);
   background: #fafafa;
   box-shadow: none;
   box-sizing: border-box;

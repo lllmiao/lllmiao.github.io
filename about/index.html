@@ -111,47 +111,6 @@
   </div>
 </div>
 <script>
-  /*   var binft = function (r) {
-      function t() {
-        return b[Math.floor(Math.random() * b.length)]
-      }  
-      function e() {
-        return String.fromCharCode(94 * Math.random() + 33)
-      }
-      function n(r) {
-        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-          var l = document.createElement("span");
-          l.textContent = e(), l.style.color = t(), n.appendChild(l)
-        }
-        return n
-      }
-      function i() {
-        var t = o[c.skillI];
-        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-      }
-      var l = "",
-      o = ["Record my every harvest", "私人博客——记录美腻人生"].map(function (r) {
-      return r + ""
-      }),
-      a = 2,
-      g = 1,
-      s = 5,
-      d = 75,
-      b = [],
-      c = {
-        text: "",
-        prefixP: -s,
-        skillI: 0,
-        skillP: 0,
-        direction: "forward",
-        delay: a,
-        step: g
-      };
-      i()
-      };
-      binft(document.getElementById('binft')); */
-
-
 
       let divTyping = document.getElementById('binft')
   let i = 0,
@@ -219,7 +178,7 @@
                       
             
               <li class='header'>
-                <i class='fas fa-tags fa-fw'></i>分类
+                <i class='fas fa-hashtag fa-fw'></i>分类
               </li>
             
           
@@ -233,7 +192,7 @@
                   
                     id="archives"
                   >
-                  
+                  按时间
                 </a>
                 
               </li>
@@ -250,6 +209,22 @@
                     id="tagsindexhtml"
                   >
                   按标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/index.html
+                  
+                  
+                  
+                    id="categoriesindexhtml"
+                  >
+                  按类型
                 </a>
                 
               </li>
@@ -422,7 +397,7 @@
                       
             
               <li class='header'>
-                <i class='fas fa-tags fa-fw'></i>分类
+                <i class='fas fa-hashtag fa-fw'></i>分类
               </li>
             
           
@@ -436,7 +411,7 @@
                   
                     id="archives"
                   >
-                  
+                  按时间
                 </a>
                 
               </li>
@@ -453,6 +428,22 @@
                     id="tagsindexhtml"
                   >
                   按标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/index.html
+                  
+                  
+                  
+                    id="categoriesindexhtml"
+                  >
+                  按类型
                 </a>
                 
               </li>
@@ -570,7 +561,7 @@
   </div>
   
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper' id="pjax-container">
       
         <!--此文件用来存放一些不方便取值的变量-->
@@ -592,16 +583,16 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("blog" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover')[0].style.display = "none";
     document.getElementsByClassName('l_body')[0].classList.add("nocover");
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("blog" == "blog") { // 半屏
+    if ("none" == "blog") { // 半屏
       document.getElementsByClassName('cover')[0].classList.remove("full");
       document.getElementsByClassName('cover')[0].classList.add("half");
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("blog" == "docs") { // 全屏
+    } else if ("none" == "docs") { // 全屏
       document.getElementsByClassName('cover')[0].classList.remove("half");
       document.getElementsByClassName('cover')[0].classList.add("full");
       document.getElementsByClassName('scroll-down')[0].style.display = "";
@@ -650,11 +641,6 @@
     <p>阿喵</p>
   </a>
 </div>
-
-            
-          
-            
-              
 
             
           
@@ -773,27 +759,7 @@
     <br><br>
     
       
-        <div class="aplayer-container">
-          
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='300px'
-      server='netease'
-      type='playlist'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-        </div>
+        <div id="aplayer"></div>
       
     
       
@@ -835,8 +801,11 @@
         </div>
       
     
-   
-  </footer>
+    <link rel="stylesheet" href="/source/dist/APlayer.min.css">
+  
+    <script type="text/javascript" src="/source/dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/source/dist/music.js"></script>
+  </footer>   
   <script>
     var now = new Date(); 
     function createtime() { 
@@ -1303,7 +1272,9 @@ setInterval("createtime()",250);
 </script>
 
     
-  </div>
+  </div>2
+  <!--浏览器搞笑标题-->
+  <script type="text/javascript" src="/js/FunnyTitle.js"></script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
 </body>
 </html>
