@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme='https://volantis.js.org/#3.0-beta1'>
+<head hexo-theme='https://volantis.js.org/#3.0-beta2'>
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -72,16 +72,13 @@
       <div class='cover-body'>
   <div class='a'>
     
-      <img class='logo' src='./themes/volantis/source/img/title.PNG'/>
+      <img no-lazy class='logo' src='https://i.loli.net/2020/07/22/2OYbPxZjhdFce3L.png'/>
     
     
     
-<!-- 封面滚动字体 -->
-<div id="binft" style="color:#14473e;margin-top: 10px;"></div> 
-  </div>
-
+</div>
   <div class='b'>
-    <div class='menu navigation'>
+    <div class='menu navigation featured'>
       <ul class='cover-list-h'>
         
           
@@ -110,37 +107,15 @@
     </div>
   </div>
 </div>
-<script>
-
-      let divTyping = document.getElementById('binft')
-  let i = 0,
-    timer = 0,
-    str = 'Record my every harvest'
-
-  function typing () {
-    if (i <= str.length) {
-      divTyping.innerHTML = str.slice(0, i++) + '_'
-      timer = setTimeout(typing, 200)
-    }
-    else {
-      divTyping.innerHTML = str//结束打字,移除 _ 光标
-      clearTimeout(timer)
-    }
-  }
-
-  typing()
-  </script>
       <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
     </cover>
-    <header class="l_header shadow blur">
+    <header class="l_header no_sidebar shadow blur">
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
       <p class="title"></p>
       <ul class='switcher nav-list-h' id="pjax-header-nav-list">
         <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
-        
-          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
       </ul>
     </div>
@@ -309,7 +284,7 @@
       loop='all'
       order='list'
       fixed='false'
-      list-max-height='300px'
+      list-max-height='340px'
       server='netease'
       type='playlist'
       id='3175833810'
@@ -329,11 +304,11 @@
                       
             
               <li>
-                <a class="flat-box" href=https://github.com/volantis-x/hexo-theme-volantis/releases/
+                <a class="flat-box" href=/lyb.html
                   
                   
                   
-                    id="https:githubcomvolantis-xhexo-theme-volantisreleases"
+                    id="lybhtml"
                   >
                   <i class='fas fa-window-maximize fa-fw'></i>留言
                 </a>
@@ -370,7 +345,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="搜索..." />
+          <input type="text" class="input u-search-input" placeholder="Search..." />
         </form>
       </div>
 
@@ -517,11 +492,11 @@
                       
             
               <li>
-                <a class="flat-box" href=https://github.com/volantis-x/hexo-theme-volantis/releases/
+                <a class="flat-box" href=/lyb.html
                   
                   
                   
-                    id="https:githubcomvolantis-xhexo-theme-volantisreleases"
+                    id="lybhtml"
                   >
                   <i class='fas fa-window-maximize fa-fw'></i>留言
                 </a>
@@ -562,6 +537,7 @@
 
   </div>
   
+
 
   <div class="l_body nocover">
     <div class='body-wrapper' id="pjax-container">
@@ -606,7 +582,7 @@
       
 
 
-<div class='l_main'>
+<div class='l_main no_sidebar'>
   
     
       <section class="post-list ">
@@ -631,37 +607,6 @@
 </div>
 <aside class='l_side'>
   
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>标签</span></a>
-    
-  </header>
-
-
-     <div class='content'>
-       <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14px; color: #999">日记</a>
-     </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-
-
-
-  
-
 
 </aside>
 
@@ -674,7 +619,28 @@
     <br><br>
     
       
-        <div id="aplayer"></div>
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='3175833810'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+        <!-- <div id="aplayer"></div> -->
       
     
       
@@ -709,6 +675,15 @@
       
     
       
+        本站使用
+        <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
+      
+    
+      
         <div class='copyright'>
           <span id="timeDate" style="font-size: 15px;">载入天数...</span><span id="times" style="font-size: 15px;">载入时分秒...</span>
         <p>感谢观看~  over <span class="p fas fa-heart red"></span></p>
@@ -716,11 +691,12 @@
         </div>
       
     
-    <link rel="stylesheet" href="/source/dist/APlayer.min.css">
+ <!--    <link rel="stylesheet" href="/source/dist/APlayer.min.css">
   
     <script type="text/javascript" src="/source/dist/APlayer.min.js"></script>
     <script type="text/javascript" src="/source/dist/music.js"></script>
-  </footer>   
+  -->
+  </footer>
   <script>
     var now = new Date(); 
     function createtime() { 
@@ -784,8 +760,8 @@ setInterval("createtime()",250);
           }
           shuffle(imgs);
         }
-        if ('') {
-          $('').backstretch(
+        if ('.cover') {
+          $('.cover').backstretch(
             imgs,
           {
             duration: "20000",
@@ -1156,8 +1132,8 @@ setInterval("createtime()",250);
         pjax_fancybox();
         
           
-          if ('') {
-            $('').backstretch("resize");
+          if ('.cover') {
+            $('.cover').backstretch("resize");
           } else {
             $.backstretch("resize");
           }
@@ -1187,9 +1163,11 @@ setInterval("createtime()",250);
 </script>
 
     
-  </div>2
+  </div>
   <!--浏览器搞笑标题-->
   <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+  <!-- 单击显示文字 -->
   <script type="text/javascript" src="/js/click_show_text.js"></script>
+
 </body>
 </html>

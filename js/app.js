@@ -45,7 +45,7 @@ var customSearch;
 				$postsBtn.unbind('click');
 			});
 		}
-	/* 	if ($titleBtn.length && $bodyAnchor) {
+		if ($titleBtn.length && $bodyAnchor) {
 			$titleBtn.click(e => {
 				e.preventDefault();
 				e.stopPropagation();
@@ -53,7 +53,7 @@ var customSearch;
 				e.stopImmediatePropagation();
 				$titleBtn.unbind('click');
 			});
-		} */
+		}
 		if ($topBtn.length && $bodyAnchor) {
 			$topBtn.click(e => {
 				e.preventDefault();
@@ -120,10 +120,10 @@ var customSearch;
 		const $comment = $('.s-comment', $wrapper);   // 评论按钮  桌面端 移动端
 		const $toc = $('.s-toc', $wrapper);           // 目录按钮  仅移动端
 		
-/* 		$wrapper.find('.nav-sub .title').text(window.subData.title);   // 二级导航文章标题
- */
-		// 决定一二级导航栏的切换（也就是关于进入文章时下移动时，导航栏显示标题名称）
-		/* let pos = document.body.scrollTop;
+		$wrapper.find('.nav-sub .title').text(window.subData.title);   // 二级导航文章标题
+
+		// 决定一二级导航栏的切换
+		let pos = document.body.scrollTop;
 		$(document, window).scroll(() => {
 			const scrollTop = $(window).scrollTop();
 			const del = scrollTop - pos;
@@ -134,7 +134,7 @@ var customSearch;
 				pos = scrollTop;
 				$wrapper.removeClass('sub');  // <---- 取消二级导航显示
 			}
-		}); */
+		});
 
 		// bind events to every btn
 		let $commentTarget = $('.l_body .comments');  // 评论区域
@@ -426,7 +426,7 @@ if(window.location.hash){
 	var checkExist = setInterval(function() {
 	   if (typeof jQuery == 'undefined'){return;}
 	   if ($("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).length) {
-		  $('html, body').animate({scrollTop: $("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).offset().top-10}, 500);
+		  $('html, body').animate({scrollTop: $("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).offset().top-40}, 500);
 		  clearInterval(checkExist);
 	   }
 	}, 100);
