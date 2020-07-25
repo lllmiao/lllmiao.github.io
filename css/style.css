@@ -2580,11 +2580,11 @@ div.gallery.stretch>p img {
   margin-bottom: 32px;
 }
 #archive-page .archive .archive-year {
-  margin-top: 4em;
+  margin-top: 0em;
   margin-bottom: 1em;
 }
 #archive-page .archive .archive-year:first-child {
-  margin-top: 0em;
+  margin-top: -2em;
   padding-top: 0;
 }
 #archive-page .archive .archive-year h2 {
