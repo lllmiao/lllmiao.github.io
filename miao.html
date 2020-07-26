@@ -63,6 +63,7 @@
   
 </head>
 
+
 <body>
   
   
@@ -72,41 +73,15 @@
       <div class='cover-body'>
   <div class='a'>
     
-      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/title%20(1).png'/>
-      <p style="color:rgb(73, 63, 211);font-style:italic;">" Record my every harvest_ "</p>
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/title2.png'/>
+      <i style="color:rgb(14, 61, 79);">" Record my every harvest_ "</i>
     
     
     
 </div>
 
   <div class='b'>
-    <div class='menu navigation focus'>
-      <ul class='cover-list-h'>
-        
-          
-            <li>
-              <a class="nav home"
-                href="https://lllmiao.github.io/"
-                
-                
-                id="https:lllmiaogithubio">
-                <i class='fas fa-bookmark fa-fw'></i>Articles
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://volantis.js.org/archives/"
-                
-                
-                id="https:volantisjsorgarchives">
-                <i class='fas fa-cube fa-fw'></i>Project
-              </a>
-            </li>
-          
-        
-      </ul>
-    </div>
+    
   </div>
 </div>
       <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -285,43 +260,6 @@
                 </a>
                 
                   <ul class="list-v">
-                    
-                      
-            
-              
-                <li>
-                  <a class="flat-box">
-                    <i class='fas fa-compact-disc fa-fw music'></i>背景音乐
-                  </a>
-                  <ul class="list-v">
-                    <li>
-                      <div class="aplayer-container">
-                        
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='340px'
-      server='netease'
-      type='playlist'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-                      </div>
-                    </li>
-                  </ul>
-                <li>
-              
-            
-          
                     
                       
             
@@ -525,12 +463,6 @@
                     
                       
             
-              
-            
-          
-                    
-                      
-            
               <li>
                 <a class="flat-box" href=/lyb.html
                   
@@ -582,7 +514,7 @@
   <div class="l_body nocover">
     <div class='body-wrapper' id="pjax-container">
       
-        <!--此文件用来存放一些不方便取值的变量-->
+      <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
@@ -654,7 +586,7 @@
           <center><span class=" fas fa-fan fa-spin fa-fw" style="color:red"></span> 
 <span class='p center small blue'>欢迎来到俺的博客</span>
 <br></center>
-<img src='http://pic.netbian.com/uploads/allimg/191115/232632-15738315927970.jpg' style='width:625px'>
+<img src='https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/girl.jpg' style='width:625px'>
 
           
         </div>
@@ -666,10 +598,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-25T23:24:26+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-26T17:26:50+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月25日</p>
+    <p>更新于：2020年7月26日</p>
   </a>
 </div>
 
@@ -818,11 +750,11 @@
       volume='0.7'
       loop='all'
       order='list'
-      fixed='false'
+      fixed='true'
       list-max-height='340px'
       server='netease'
       type='playlist'
-      id='3175833810'
+      id='5143270143'
       list-folded='true'>
     </meting-js>
   
@@ -1223,7 +1155,7 @@ setInterval("createtime()",250);
 
 
     
-      
+    
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1344,13 +1276,36 @@ setInterval("createtime()",250);
 
     
   </div>
+  <script>
+    //在页面未加载完毕之前显示的loading Html自定义内容
+
+    var _LoadingHtml = '页面加载中，请等待......';
+
+    //呈现loading效果
+
+    document.write(_LoadingHtml);
+
+    //监听加载状态改变
+    document.onreadystatechange = completeLoading;
+
+    //加载状态为complete时移除loading效果
+    function completeLoading() {
+      if (document.readyState == "complete") {
+        var loadingMask = document.getElementById('loadingDiv');
+        loadingMask.parentNode.removeChild(loadingMask);
+      }
+    }
+  </script>
   <!--浏览器搞笑标题-->
-  <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/Hexojs/FunnyTitle.js">
+  </script>
   <!-- 单击显示文字 -->
-  <script type="text/javascript" src="/js/click_show_text.js"></script>
-<!--动态线条背景-->
-<script type="text/javascript"
-color="104, 212, 188" opacity='0.5' zIndex="-2" count="180" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/Hexojs/click_show_text.js">
+  </script>
+  <!--动态线条背景-->
+  <script type="text/javascript" color="104, 212, 188" opacity='0.5' zIndex="-2" count="180"
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+  </script>
 </body>
+
 </html>

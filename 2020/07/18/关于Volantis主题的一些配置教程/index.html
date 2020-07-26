@@ -67,6 +67,7 @@
   
 </head>
 
+
 <body>
   
   
@@ -76,41 +77,15 @@
       <div class='cover-body'>
   <div class='a'>
     
-      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/title%20(1).png'/>
-      <p style="color:rgb(73, 63, 211);font-style:italic;">" Record my every harvest_ "</p>
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/title2.png'/>
+      <i style="color:rgb(14, 61, 79);">" Record my every harvest_ "</i>
     
     
     
 </div>
 
   <div class='b'>
-    <div class='menu navigation focus'>
-      <ul class='cover-list-h'>
-        
-          
-            <li>
-              <a class="nav home"
-                href="https://lllmiao.github.io/"
-                
-                
-                id="https:lllmiaogithubio">
-                <i class='fas fa-bookmark fa-fw'></i>Articles
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://volantis.js.org/archives/"
-                
-                
-                id="https:volantisjsorgarchives">
-                <i class='fas fa-cube fa-fw'></i>Project
-              </a>
-            </li>
-          
-        
-      </ul>
-    </div>
+    
   </div>
 </div>
       <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -289,43 +264,6 @@
                 </a>
                 
                   <ul class="list-v">
-                    
-                      
-            
-              
-                <li>
-                  <a class="flat-box">
-                    <i class='fas fa-compact-disc fa-fw music'></i>背景音乐
-                  </a>
-                  <ul class="list-v">
-                    <li>
-                      <div class="aplayer-container">
-                        
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='340px'
-      server='netease'
-      type='playlist'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-                      </div>
-                    </li>
-                  </ul>
-                <li>
-              
-            
-          
                     
                       
             
@@ -529,12 +467,6 @@
                     
                       
             
-              
-            
-          
-                    
-                      
-            
               <li>
                 <a class="flat-box" href=/lyb.html
                   
@@ -586,7 +518,7 @@
   <div class="l_body nocover">
     <div class='body-wrapper' id="pjax-container">
       
-        <!--此文件用来存放一些不方便取值的变量-->
+      <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
@@ -713,7 +645,7 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">announce:</span><br><span class="line">   class: text</span><br><span class="line">   display: [desktop,mobile]</span><br><span class="line">   header:</span><br><span class="line"><span class="code">     icon: fas fa-bullhorn</span></span><br><span class="line"><span class="code">     title: 最新公告</span></span><br><span class="line"><span class="code">     url:</span></span><br><span class="line">   content:</span><br><span class="line"><span class="bullet">     - </span>'写入内容'</span><br></pre></td></tr></table></figure>
 <h3 id="2-导航栏之浏览页面时固定"><a href="#2-导航栏之浏览页面时固定" class="headerlink" title="2. 导航栏之浏览页面时固定"></a><strong>2. 导航栏之浏览页面时固定</strong></h3><span class='p red'>位置：</span><br>\volantis\layout\_pre.ejs 下的第8行<br>将此句<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.cover = theme.cover.display.others;</span><br></pre></td></tr></table></figure>
-<p>删除或注释<br><span class='p cyan'>ps：在\volantis\layout\js\app.js中第48行开始，是关于页面中下移动时导航栏显示内标题的相关设置，可动也可不动</span></p>
+<p>删除或注释<br><span class='p green'>ps：在\volantis\layout\js\app.js中第48行开始，是关于页面中下移动时导航栏显示内标题的相关设置，可动也可不动</span></p>
 <div class="note bug red">
             <p>记得备份，不然头疼🤦‍♂️</p>
           </div>
@@ -733,6 +665,18 @@
 <h3 id="6-全屏封面与归档图片的显示"><a href="#6-全屏封面与归档图片的显示" class="headerlink" title="6. 全屏封面与归档图片的显示"></a><strong>6. 全屏封面与归档图片的显示</strong></h3><span class='p red'>位置：</span><br>\volantis\congif.yml 下的第98行后面<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cover:</span><br><span class="line">  scheme: blog    // docs全屏封面, blog半屏封面</span><br><span class="line">  layout: focus   //关于封面上导航选项的样式。search (搜索), dock (坞), featured (精选), focus (焦点)</span><br><span class="line">  display:</span><br><span class="line"><span class="code">    home: true    //这里是设置全屏是是否显示</span></span><br><span class="line"><span class="code">    archive: false //这里是设置归档页面是否显示</span></span><br><span class="line"><span class="code">    others: false  //这里是其他那些页面是都显示</span></span><br></pre></td></tr></table></figure>
 <span class='p red'>But！我发现修改layout的话评论区域就会GG</span>
+
+<h3 id="7-音乐播放器"><a href="#7-音乐播放器" class="headerlink" title="7. 音乐播放器"></a><strong>7. 音乐播放器</strong></h3><span class='p red'>音乐库：</span><br>\volantis\congif.yml下的aplayer，大概第421行<br>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id:  xxxxxx</span><br></pre></td></tr></table></figure>
+<p>此处填写在网易云收藏菜单页的地址链接上的id号(正常为十位数)</p>
+<span class='p red'>样式：</span><br>\volantis\congif.yml下的aplayer，大概第423行<br>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fixed: false</span><br></pre></td></tr></table></figure>
+<span class='p red'>①</span> fixed: false，原主题样式<br>
+<span class='p red'>②</span> fixed: true，固定模式（看俺博客播放器）<br>
+<span class='p red'>③</span> mini: true，迷你模式<br>
+<span class='p red'>④</span> 自适应主题等等，具体请看
+<p>[<a href="https://aplayer.js.org/#/]" target="_blank" rel="noopener">https://aplayer.js.org/#/]</a></p>
+
           
             <div class='article_footer'>
               
@@ -781,10 +725,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-24T23:44:24+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-26T19:08:47+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月24日</p>
+    <p>更新于：2020年7月26日</p>
   </a>
 </div>
 
@@ -932,7 +876,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标签部件之添加公告"><span class="toc-text">1. 标签部件之添加公告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-导航栏之浏览页面时固定"><span class="toc-text">2. 导航栏之浏览页面时固定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-导航栏之导航栏与子菜单的距离"><span class="toc-text">3. 导航栏之导航栏与子菜单的距离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-导航栏之搜索icon颜色和输入字体颜色"><span class="toc-text">4. 导航栏之搜索icon颜色和输入字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-鼠标样式"><span class="toc-text">5. 鼠标样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-全屏封面与归档图片的显示"><span class="toc-text">6. 全屏封面与归档图片的显示</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标签部件之添加公告"><span class="toc-text">1. 标签部件之添加公告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-导航栏之浏览页面时固定"><span class="toc-text">2. 导航栏之浏览页面时固定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-导航栏之导航栏与子菜单的距离"><span class="toc-text">3. 导航栏之导航栏与子菜单的距离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-导航栏之搜索icon颜色和输入字体颜色"><span class="toc-text">4. 导航栏之搜索icon颜色和输入字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-鼠标样式"><span class="toc-text">5. 鼠标样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-全屏封面与归档图片的显示"><span class="toc-text">6. 全屏封面与归档图片的显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-音乐播放器"><span class="toc-text">7. 音乐播放器</span></a></li></ol>
     </div>
   </section>
 
@@ -961,11 +905,11 @@
       volume='0.7'
       loop='all'
       order='list'
-      fixed='false'
+      fixed='true'
       list-max-height='340px'
       server='netease'
       type='playlist'
-      id='3175833810'
+      id='5143270143'
       list-folded='true'>
     </meting-js>
   
@@ -1366,7 +1310,7 @@ setInterval("createtime()",250);
 
 
     
-      
+    
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1487,13 +1431,36 @@ setInterval("createtime()",250);
 
     
   </div>
+  <script>
+    //在页面未加载完毕之前显示的loading Html自定义内容
+
+    var _LoadingHtml = '页面加载中，请等待......';
+
+    //呈现loading效果
+
+    document.write(_LoadingHtml);
+
+    //监听加载状态改变
+    document.onreadystatechange = completeLoading;
+
+    //加载状态为complete时移除loading效果
+    function completeLoading() {
+      if (document.readyState == "complete") {
+        var loadingMask = document.getElementById('loadingDiv');
+        loadingMask.parentNode.removeChild(loadingMask);
+      }
+    }
+  </script>
   <!--浏览器搞笑标题-->
-  <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/Hexojs/FunnyTitle.js">
+  </script>
   <!-- 单击显示文字 -->
-  <script type="text/javascript" src="/js/click_show_text.js"></script>
-<!--动态线条背景-->
-<script type="text/javascript"
-color="104, 212, 188" opacity='0.5' zIndex="-2" count="180" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/Hexojs/click_show_text.js">
+  </script>
+  <!--动态线条背景-->
+  <script type="text/javascript" color="104, 212, 188" opacity='0.5' zIndex="-2" count="180"
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+  </script>
 </body>
+
 </html>
