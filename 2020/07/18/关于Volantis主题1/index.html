@@ -16,13 +16,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>关于Volantis主题的一些配置教程 - 阿喵超咸</title>
+  <title>关于Volantis主题&lt;1&gt; - 阿喵超咸</title>
   
     <meta name="keywords" content="Volantis">
   
 
   
-    <meta name="description" content=" 关于小白修改Volantis的一些配置">
+    <meta name="description" content=" 记录小白修改Volantis的一些配置
+开搞之前记得备份，不然头疼🤦‍♂️">
   
 
   <!-- feed -->
@@ -525,7 +526,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">关于Volantis主题的一些配置教程</div>
+  <div id="pjax-pageTitle">关于Volantis主题&lt;1&gt;</div>
   <div id="pjax-enable-cover">true</div>
   
   <div id="valine-path">none</div>
@@ -576,8 +577,8 @@
         
           
   <h1 class="title">
-    <a href="/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/">
-      关于Volantis主题的一些配置教程
+    <a href="/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/">
+      关于Volantis主题<1>
     </a>
   </h1>
 
@@ -639,34 +640,28 @@
         <div class="article-entry" itemprop="articleBody">
           
           
-          <p><span class="p fas fa-hashtag green"></span> 关于小白修改Volantis的一些配置</p>
+          <p><span class="p fas fa-hashtag green"></span> 记录小白修改Volantis的一些配置</p>
+<div class="note warning"><p>开搞之前记得备份，不然头疼🤦‍♂️</p></div>
+
 <a id="more"></a>
-<h3 id="1-标签部件之添加公告"><a href="#1-标签部件之添加公告" class="headerlink" title="1. 标签部件之添加公告"></a><strong>1. 标签部件之添加公告</strong></h3><span class='p red'>位置(二选一)：</span><br>①volantis/_config.yml下的widget: 部分<br>②blog/source/_data/widget.yml<br><br><span class='p red'>代码：</span>
+
+<h3 id="1-标签部件之添加公告"><a href="#1-标签部件之添加公告" class="headerlink" title="1. 标签部件之添加公告"></a><strong>1. 标签部件之添加公告</strong></h3><p class='p gray'>[新版本自带了好像T_T]</p>
+<span class='p red'>位置(二选一)：</span><br>①volantis/_config.yml下的widget: 部分<br>②blog/source/_data/widget.yml<br><br><span class='p red'>代码：</span>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">announce:</span><br><span class="line">   class: text</span><br><span class="line">   display: [desktop,mobile]</span><br><span class="line">   header:</span><br><span class="line"><span class="code">     icon: fas fa-bullhorn</span></span><br><span class="line"><span class="code">     title: 最新公告</span></span><br><span class="line"><span class="code">     url:</span></span><br><span class="line">   content:</span><br><span class="line"><span class="bullet">     - </span>'写入内容'</span><br></pre></td></tr></table></figure>
 <h3 id="2-导航栏之浏览页面时固定"><a href="#2-导航栏之浏览页面时固定" class="headerlink" title="2. 导航栏之浏览页面时固定"></a><strong>2. 导航栏之浏览页面时固定</strong></h3><span class='p red'>位置：</span><br>\volantis\layout\_pre.ejs 下的第8行<br>将此句<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.cover = theme.cover.display.others;</span><br></pre></td></tr></table></figure>
 <p>删除或注释<br><span class='p green'>ps：在\volantis\layout\js\app.js中第48行开始，是关于页面中下移动时导航栏显示内标题的相关设置，可动也可不动</span></p>
-<div class="note bug red">
-            <p>记得备份，不然头疼🤦‍♂️</p>
-          </div>
 <h3 id="3-导航栏之导航栏与子菜单的距离"><a href="#3-导航栏之导航栏与子菜单的距离" class="headerlink" title="3. 导航栏之导航栏与子菜单的距离"></a><strong>3. 导航栏之导航栏与子菜单的距离</strong></h3><span class='p red'>位置：</span><br>\volantis\source\css\_layout\navbar.styl 下的第218行<br>将此句<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin-top: 4px - $border-card * 0.5</span><br></pre></td></tr></table></figure>
 <p>的第一个数字进行修改即可，4px效果可看我博客。</p>
-<h3 id="4-导航栏之搜索icon颜色和输入字体颜色"><a href="#4-导航栏之搜索icon颜色和输入字体颜色" class="headerlink" title="4. 导航栏之搜索icon颜色和输入字体颜色"></a><strong>4. 导航栏之搜索icon颜色和输入字体颜色</strong></h3><span class='p red'>位置：</span><br>\volantis\source\css\_layout\navbar.styl 下的第148行(icon)和第157行(字体)<br>将此句<br>
+<h3 id="4-搜索栏之icon颜色和输入字体颜色"><a href="#4-搜索栏之icon颜色和输入字体颜色" class="headerlink" title="4. 搜索栏之icon颜色和输入字体颜色"></a><strong>4. 搜索栏之icon颜色和输入字体颜色</strong></h3><span class='p red'>位置：</span><br>\volantis\source\css\_layout\navbar.styl 下的第148行(icon)和第157行(字体)<br>将此句<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color: alpha($color-theme, 70%)</span><br></pre></td></tr></table></figure>
 <p>的颜色进行修改即可，图中是主题的青色</p>
-<h3 id="5-鼠标样式"><a href="#5-鼠标样式" class="headerlink" title="5. 鼠标样式"></a><strong>5. 鼠标样式</strong></h3><span class='p red'>位置：</span><br>\volantis\source\css\_base\index.styl 下的第5行后面<br>将此句<br>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),default;</span><br></pre></td></tr></table></figure>
-<p>还有在第89行后面<br>将此句<br></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),default;</span><br></pre></td></tr></table></figure>
-<p>补充上，这就是我博客的鼠标样式。另外还有如下样式<br></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur),auto;</span><br><span class="line"><span class="code">    background-color: @theme_background;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cursor: url(https://images.cnblogs.com/cnblogs<span class="emphasis">_com/jingjingjingjingjingjingrj/1701449/o_</span>200415081944o_cursor.png),auto;</span><br></pre></td></tr></table></figure>
-<h3 id="6-全屏封面与归档图片的显示"><a href="#6-全屏封面与归档图片的显示" class="headerlink" title="6. 全屏封面与归档图片的显示"></a><strong>6. 全屏封面与归档图片的显示</strong></h3><span class='p red'>位置：</span><br>\volantis\congif.yml 下的第98行后面<br>
+<h3 id="5-全屏封面与归档图片的显示"><a href="#5-全屏封面与归档图片的显示" class="headerlink" title="5. 全屏封面与归档图片的显示"></a><strong>5. 全屏封面与归档图片的显示</strong></h3><span class='p red'>位置：</span><br>\volantis\congif.yml 下的第98行后面<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cover:</span><br><span class="line">  scheme: blog    // docs全屏封面, blog半屏封面</span><br><span class="line">  layout: focus   //关于封面上导航选项的样式。search (搜索), dock (坞), featured (精选), focus (焦点)</span><br><span class="line">  display:</span><br><span class="line"><span class="code">    home: true    //这里是设置全屏是是否显示</span></span><br><span class="line"><span class="code">    archive: false //这里是设置归档页面是否显示</span></span><br><span class="line"><span class="code">    others: false  //这里是其他那些页面是都显示</span></span><br></pre></td></tr></table></figure>
 <span class='p red'>But！我发现修改layout的话评论区域就会GG</span>
 
-<h3 id="7-音乐播放器"><a href="#7-音乐播放器" class="headerlink" title="7. 音乐播放器"></a><strong>7. 音乐播放器</strong></h3><span class='p red'>音乐库：</span><br>\volantis\congif.yml下的aplayer，大概第421行<br>
+<h3 id="6-音乐播放器的配置"><a href="#6-音乐播放器的配置" class="headerlink" title="6. 音乐播放器的配置"></a><strong>6. 音乐播放器的配置</strong></h3><span class='p red'>音乐库：</span><br>\volantis\congif.yml下的aplayer，大概第421行<br>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id:  xxxxxx</span><br></pre></td></tr></table></figure>
 <p>此处填写在网易云收藏菜单页的地址链接上的id号(正常为十位数)</p>
 <span class='p red'>样式：</span><br>\volantis\congif.yml下的aplayer，大概第423行<br>
@@ -700,7 +695,7 @@
           
         
           
-            <p>本文永久链接是：<a href=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/>https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</a></p>
+            <p>本文永久链接是：<a href=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/>https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/</a></p>
           
         
       </blockquote>
@@ -725,7 +720,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-26T19:08:47+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-26T23:16:58+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年7月26日</p>
@@ -747,7 +742,8 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/&title=关于Volantis主题的一些配置教程 - 阿喵超咸&summary= 关于小白修改Volantis的一些配置"
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/&title=关于Volantis主题<1> - 阿喵超咸&summary= 记录小白修改Volantis的一些配置
+开搞之前记得备份，不然头疼🤦‍♂️"
           
           >
           
@@ -759,7 +755,8 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/&title=关于Volantis主题的一些配置教程 - 阿喵超咸&summary= 关于小白修改Volantis的一些配置"
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/&title=关于Volantis主题<1> - 阿喵超咸&summary= 记录小白修改Volantis的一些配置
+开搞之前记得备份，不然头疼🤦‍♂️"
           
           >
           
@@ -771,7 +768,8 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/&title=关于Volantis主题的一些配置教程 - 阿喵超咸&summary= 关于小白修改Volantis的一些配置"
+          href="http://service.weibo.com/share/share.php?url=https://lllmiao.github.io/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/&title=关于Volantis主题<1> - 阿喵超咸&summary= 记录小白修改Volantis的一些配置
+开搞之前记得备份，不然头疼🤦‍♂️"
           
           >
           
@@ -796,13 +794,15 @@
           <div class="prev-next">
             
             
-              <a class='next' href='/2020/07/18/%E6%8E%A8%E8%8D%90%E5%85%AD%E6%AC%BE%E5%A5%BD%E7%94%A8Chrome%E6%8F%92%E4%BB%B6/'>
-                <p class='title'>推荐六款好用Chrome插件<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'> 个人推荐！贼好用！等有时间就来修补
+              <a class='next' href='/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%982/'>
+                <p class='title'>关于Volantis主题<2><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'> 记录小白修改Volantis的一些配置
+开搞之前记得备份，不然头疼🤦‍♂️
 
 
-（未实现）
-1. 吸色器2. 量尺器3. vue工具</p>
+
+1. 导入其他图片方法：使用csd（加载速度更快）效果：点击此图工具：github+jsdelivr
+ 步骤...</p>
               </a>
             
           </div>
@@ -853,7 +853,7 @@
 
 
     <div class='content'>
-      <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14px; color: #999">日记</a>
+      <a href="/tags/Volantis/" style="font-size: 24px; color: #555">Volantis</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14px; color: #999">日记</a>
     </div>
   </section>
 
@@ -876,7 +876,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标签部件之添加公告"><span class="toc-text">1. 标签部件之添加公告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-导航栏之浏览页面时固定"><span class="toc-text">2. 导航栏之浏览页面时固定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-导航栏之导航栏与子菜单的距离"><span class="toc-text">3. 导航栏之导航栏与子菜单的距离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-导航栏之搜索icon颜色和输入字体颜色"><span class="toc-text">4. 导航栏之搜索icon颜色和输入字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-鼠标样式"><span class="toc-text">5. 鼠标样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-全屏封面与归档图片的显示"><span class="toc-text">6. 全屏封面与归档图片的显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-音乐播放器"><span class="toc-text">7. 音乐播放器</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标签部件之添加公告"><span class="toc-text">1. 标签部件之添加公告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-导航栏之浏览页面时固定"><span class="toc-text">2. 导航栏之浏览页面时固定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-导航栏之导航栏与子菜单的距离"><span class="toc-text">3. 导航栏之导航栏与子菜单的距离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-搜索栏之icon颜色和输入字体颜色"><span class="toc-text">4. 搜索栏之icon颜色和输入字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-全屏封面与归档图片的显示"><span class="toc-text">5. 全屏封面与归档图片的显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-音乐播放器的配置"><span class="toc-text">6. 音乐播放器的配置</span></a></li></ol>
     </div>
   </section>
 
@@ -1431,26 +1431,6 @@ setInterval("createtime()",250);
 
     
   </div>
-  <script>
-    //在页面未加载完毕之前显示的loading Html自定义内容
-
-    var _LoadingHtml = '页面加载中，请等待......';
-
-    //呈现loading效果
-
-    document.write(_LoadingHtml);
-
-    //监听加载状态改变
-    document.onreadystatechange = completeLoading;
-
-    //加载状态为complete时移除loading效果
-    function completeLoading() {
-      if (document.readyState == "complete") {
-        var loadingMask = document.getElementById('loadingDiv');
-        loadingMask.parentNode.removeChild(loadingMask);
-      }
-    }
-  </script>
   <!--浏览器搞笑标题-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lllmiao/Pictures@master/Hexojs/FunnyTitle.js">
   </script>
