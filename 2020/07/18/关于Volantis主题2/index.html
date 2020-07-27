@@ -533,6 +533,9 @@
   <div id="valine-placeholder">none</div>
   
   
+  <div id="minivaline-path">none</div>
+  <div id="minivaline-placeholder">none</div>
+  
 </div>
 
 
@@ -710,10 +713,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-26T23:51:49+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-27T23:09:45+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年7月26日</p>
+    <p>更新于：2020年7月27日</p>
   </a>
 </div>
 
@@ -783,8 +786,23 @@
         
           <div class="prev-next">
             
-              <a class='prev' href='/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/'>
-                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>关于Volantis主题<1></p>
+              <a class='prev' href='/2020/07/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>博客搭建</p>
+                <p class='content'> 简单介绍俺博客的搭建过程
+
+
+
+1. 搭建博客的方法有很多种在俺看来，可概括为：
+
+            易 : 新浪博客、Hexo、typecho……
+            
+
+    ...</p>
+              </a>
+            
+            
+              <a class='next' href='/2020/07/18/%E5%85%B3%E4%BA%8EVolantis%E4%B8%BB%E9%A2%981/'>
+                <p class='title'>关于Volantis主题<1><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
                 <p class='content'> 记录小白修改Volantis的一些配置
 开搞之前记得备份，不然头疼🤦‍♂️
 
@@ -792,16 +810,6 @@
 
 1. 标签部件之添加公告[新版本自带了好像T_T]
 位置(二选一)：①volantis/_config.ym...</p>
-              </a>
-            
-            
-              <a class='next' href='/2020/07/18/%E6%8E%A8%E8%8D%90%E5%85%AD%E6%AC%BE%E5%A5%BD%E7%94%A8Chrome%E6%8F%92%E4%BB%B6/'>
-                <p class='title'>推荐六款好用Chrome插件<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'> 个人推荐！贼好用！等有时间就来修补
-
-
-（未实现）
-1. 吸色器2. 量尺器3. vue工具</p>
               </a>
             
           </div>
@@ -852,7 +860,7 @@
 
 
     <div class='content'>
-      <a href="/tags/Volantis/" style="font-size: 24px; color: #555">Volantis</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14px; color: #999">日记</a>
+      <a href="/tags/Volantis/" style="font-size: 24px; color: #555">Volantis</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14px; color: #999">日记</a>
     </div>
   </section>
 
@@ -1062,7 +1070,7 @@ setInterval("createtime()",250);
 
   
   
-<script src="/js/valine.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
 
 
 <script>
@@ -1101,7 +1109,7 @@ setInterval("createtime()",250);
             window.location.pathname : $.trim($('#valine-path').text());
 
     var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
-            "快来评论吧~" : $.trim($('#valine-placeholder').text());
+            "ヾﾉ≧∀≦)o来啊，快活啊!" : $.trim($('#valine-placeholder').text());
 
     var ALLPATH = '';
     if(ALLPATH != '') valinePath = ALLPATH;
@@ -1112,8 +1120,8 @@ setInterval("createtime()",250);
       meta: meta,
       placeholder: valinePlaceholder,
       path: valinePath,
-      appId: "dogUA2FSKGTo029M1SEwGROT-MdYXbMMI",
-      appKey: "u0NdtQ8nvHoMdJPSYqm1LRxE",
+      appId: "pE5bFzSNQkrd3Wc7tcnRu8Vb-gzGzoHsz",
+      appKey: "IHWK8vXXhrDnwB23eOiSIt4e",
       pageSize: '10',
       avatar: 'robohash',
       lang: 'zh-cn',
